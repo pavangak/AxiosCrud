@@ -1,0 +1,55 @@
+$bgcolor: rgba(0,0,0,0.8);
+$color:white;
+
+
+ @mixin inputstyl{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid green;
+    color: $color;
+    border-radius: 10px;
+ }
+
+.App1{
+    background: url("https://cdn.pixabay.com/photo/2019/04/04/08/01/icon-4102192_1280.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    form{
+        background: $bgcolor;
+        color: $color;
+        width: 300px;
+        height: auto;
+        text-align: center;
+        
+
+        input{
+            @include inputstyl()
+        }
+
+        button{
+            background: blue;
+            padding: 10px;
+            width: 150px;
+            margin: 10px;
+            box-shadow: 2px solid black;
+            &:hover{
+                background-color: green;
+                color: black;
+            }
+        }
+    }
+
+
+ }

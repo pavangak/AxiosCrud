@@ -1,0 +1,34 @@
+.Read {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white; 
+  }
+  
+  .read {
+    height: 30%;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.5); 
+    text-align: center;
+  }
+  
+  .Read {
+    background-image: url('https://cdn.pixabay.com/photo/2022/03/23/07/40/technology-7086596_1280.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .read p {
+    margin: 10px 0;
+  }
+  
+  .read button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #3498db; 
+    color: white; 
+    border: none;
+    cursor: pointer;
+  }
+  
